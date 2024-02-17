@@ -3,11 +3,11 @@ import mongoose from "mongoose";
 const subTodoSchema = new mongoose.Schema({
     content: {
         type: String,
-        required: true
+        required: false
     },
     complete: {
         type:Boolean,
-        default: false
+        default: true
     },
     createdBy: {
         type: mongoose.Schema.Types.ObjectId,
